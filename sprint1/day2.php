@@ -141,6 +141,11 @@ echo "\n";
 $misal = " faqih \n  ";
 echo trim($misal);
 echo "\n";
+echo "\n";
+echo "\n";
+echo "\n";
+echo "\n";
+echo "\n";
 
 // fgets adalah fungsi untuk mengambil inputan dari cli/terminal.
 // STDIN adalah standar input -> tempat untuk menyimpan data sebelum ditampilkan
@@ -151,9 +156,9 @@ echo "Ketikkan sisi persegi : ";
 $sisi =trim(fgets(STDIN)); // bacanya dari kiri ke kanan
 $luas = $sisi * $sisi;
 $keliling = 4 * $sisi;
-echo "Sisi : $sisi\n";
-echo "Luas : sisi * sisi \nLuas : $sisi * $sisi = $luas" .PHP_EOL ;
-echo "Luas : 4 * sisi \nKeliling : 4 * $sisi = $keliling" .PHP_EOL;
+echo "Sisi = $sisi\n";
+echo "Luas = sisi * sisi \nLuas = $sisi * $sisi = $luas" .PHP_EOL ;
+echo "Luas = 4 * sisi \nKeliling = 4 * $sisi = $keliling" .PHP_EOL;
 
 
 

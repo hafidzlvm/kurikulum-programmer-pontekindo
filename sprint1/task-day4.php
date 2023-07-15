@@ -73,5 +73,8 @@ if($barang3=="Sayur"){
 }
 echo "\n";
 echo "\n";
-$all=$barang1+$barang2+$barang3;
+$all=0;
+$all+=$barang1;
+$all+=$barang2;
+$all+=$barang3;
 echo "Total : $all\n";

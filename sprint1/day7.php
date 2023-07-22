@@ -12,7 +12,7 @@ $barang=array( // CATATAN PENTING => untuk index key nya harus huruf kecil semua
     "tanggal_produksi" => "19/06/20023",
 );
 
-// foreach ($barang as $key => $val){
+// foreach ($ba rang as $key => $val){
 //     echo "$key : $val\n";
 // }
 
@@ -22,7 +22,7 @@ $barang=array( // CATATAN PENTING => untuk index key nya harus huruf kecil semua
 $string="Hello World Coding";
 $var="HELLO WORLD CODING";
 $vin="saya suka kurma";
-$number="1_324_535";
+$number=1_324_535;
 $c=["Hello", "World", "Coding"];
 // strlen() : Menghitung panjang string -> Menghitung jumlah karakter
 var_dump(strlen($string));
@@ -31,7 +31,7 @@ var_dump(str_word_count($string));
 // str_replace() : Mengganti string dengan string yang baru
 // jere kenapa ga di buat variable yang baru aja nek make str_replace
 // number_format() : Mengubah angka menjadi string dengan format angka
-var_dump(number_format($number,1/*bilangan decimal di akhir dari nomor*/,","/*pemisah atau separator dari decimal*/,"."/*separator dari numeric yang puluhan*/))
+var_dump(number_format($number,1/*bilangan decimal di akhir dari nomor*/,","/*pemisah atau separator dari decimal*/,"."/*separator dari numeric yang puluhan*/));
 var_dump(strtoupper($string));
 // strtolower() : Mengubah semua huruf menjadi huruf kecil
 var_dump(strtolower($var));

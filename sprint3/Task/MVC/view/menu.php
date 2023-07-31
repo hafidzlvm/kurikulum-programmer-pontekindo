@@ -1,10 +1,10 @@
 <?php
-    include_once "../helper/input.php";
+    // include_once "../helper/input.php";
     function app(){
         global $data,$data1;
         while(true){
-            // viewRead();
-            var_dump($data);
+            viewRead();
+            // var_dump($data);
             echo "----- Todolist.app Menu -----\n";
             echo "1. Buat List.\n";
             echo "2. Edit List.\n";

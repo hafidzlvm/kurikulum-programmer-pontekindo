@@ -1,6 +1,4 @@
 <?php
-    include_once "../helper/input.php";
-    include_once "../model/data.php";
 
     function create($create){
         global $data;

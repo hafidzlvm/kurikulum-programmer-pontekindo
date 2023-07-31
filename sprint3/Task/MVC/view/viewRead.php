@@ -1,5 +1,5 @@
 <?php
-    include_once "../controller/read.php";
+    // include_once "../controller/read.php";
     function viewRead(){
         global $data;
         if(empty($data)){

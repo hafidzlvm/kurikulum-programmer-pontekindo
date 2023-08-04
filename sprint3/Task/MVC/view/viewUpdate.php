@@ -8,7 +8,9 @@
                 echo "List yang akan anda edit $data[$update] :\n";
                 $updated=input();
                 update($update,$updated);
-            }elseif ($update>count($data)||$update<0||!is_numeric($update)){
+            }elseif ($update>count($data)||$update<0||is_int($update)||intval($update)){
+                echo "Task Not Found\n";
+            }elseif (!is_numeric($update)){
                 echo "Input Invalid\n";
             }
     }

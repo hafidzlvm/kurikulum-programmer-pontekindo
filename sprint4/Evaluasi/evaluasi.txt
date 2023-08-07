@@ -1,0 +1,9 @@
+1.  Database adalah kumpulan data-data yang tertata. Jenis-jenis database : Relational, Warehouse, dll.
+
+2.  Perbedaan dari Relational dan Non-Relational, salah satu nya adalah command-command yang digunakan berbeda satu sama lain jika di dalam jenis ratioanl hampir keseluruhan dapat menggunakan command yang sama namun jika yang Non-Relational maka akan berbeda tiap DBMS jenis Non-Relational
+
+3.  SQL adalah kepanjangan dari Structured Query Language. Yaitu, bahasa yang digunakan untuk memerintah 
+COM Database. Jenis-jenis nya :
+DDL Data Definition Language, mendefinisikan struktur dari database.
+DML Data Manipulation Language, memanipulasi data yang ada di database.
+DCL Data Control Language, berkaitan dengan hak akses database

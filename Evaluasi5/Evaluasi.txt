@@ -1,0 +1,14 @@
+2. Table relationship adalah table yang memiliki hubungan dengan table yang lain.
+3. Macam-macam Join :
+ - Join Inner => mengambil data yang memiliki kesamaan dari data-data yang ada
+ - Join Right => mengambil seluruh data dari bagian/tabel kanan dan hanya mengambil data kiri yang memiliki kesamaan dengan data/tabel kanan
+ - Join Left  => mengambil seluruh data dari bagian/tabel kiri dan hanya mengambil data kanan yang memiliki kesamaan dengan data/tabel kiri
+ - Join Full  => mengambil seluruh data/tabel baik yang bagian kiri maupun kanan.
+4. Relasi table:
+ a. One to one => ketika sebuah relasi tabel terjadi, maka data tersebut hanya dapat di gunakan oleh satu data, contoh : sebuah NIK hanya dapat di miliki oleh satu orang.
+ b. One to many => relasi table yang dapat di gunakan oleh banyak object, contoh : dalam sebuah menu terdapat list makanan, maka "makanan" merupakan subject yang dapat direlasikan ke setiap list yang ada di makanan.
+ c. Many to Many => relasi berupa banyak data yang dapat direlasikan ke data-data lainnya, contoh : para dosen memiliki gelar-gelar, dari banyaknya gelar tersebut ada yang hanya 1 gelar, 2 gelar. Bahkan sebagian memiliki 2 gelar yang sama ataupun 2 gelar berbeda dll.
+
+
+
+

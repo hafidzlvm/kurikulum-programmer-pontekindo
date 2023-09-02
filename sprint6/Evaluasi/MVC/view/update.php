@@ -3,10 +3,16 @@ include_once "../controller/update.php";
 include_once "../controller/read.php";
 $id=$_GET['id'];
 $i=$_GET['no'];
-$set=$_GET['jenis-t'];
-if ($set=="pemasukan"){
-  $read=read_pemasukan($id);
-  if (isset($_POST["acc"]) && $_POST['jumlah']!=0 ){
+
+$read = read($id);
+$reads = $read[0];
+// var_dump($reads['jenis_t']);
+// echo "<br>";
+// var_dump($reads);
+
+if ( $reads['jenis_t']=="pemasukan" ){
+  
+  if (isset($_POST["acc"]) && $_POST['jumlah']!= NULL ){
     if(updateRevenue($_POST)>0){
       echo "
       <script>
@@ -17,16 +23,16 @@ if ($set=="pemasukan"){
     } else {
       echo "
       <script>
-      alert ('Data Gagal Diubah!');
+      alert ('Data Gagal Diuba!');
       document. location.href = 'read.php';
       </script>
       ";
     }
   }
 
-} elseif ($set=="pengeluaran"){
-  $read=read_pengeluaran($id);
-  if (isset($_POST["acc"]) && $_POST['jumlah']!=0 ){
+} elseif ( $reads['jenis_t']=="pengeluaran" ) {
+  
+  if (isset($_POST["acc"]) && $_POST['jumlah']!= NULL ){
     if(updateExpenditure($_POST)>0){
       echo "
       <script>
@@ -69,30 +75,36 @@ if ($set=="pemasukan"){
     <div class="container-fluid" >
         <div class="container py-5 d-flex" style="height: 80vh; justify-content: center; align-items: center;">
             <div class="row">
+
               <div class="col-lg-6 col-md-6" style="margin-top: 30px;">
-                <h1>Anda akan mengedit jumlah <?php
-                  if ($set=="pemasukan"){echo "pemasukan";}elseif($set=="pengeluaran"){echo "pengeluaran";}
-                  ?> No.
+                <h1>Anda akan mengedit jumlah <?= $reads['jenis_t']; ?> 
+                  No.
                   <?php 
                   if (!isset($_GET['id'])){header('Location:read.php');exit;} else 
                   {echo $i; }
                   ?>
                 </h1>
+
               </div>
+
               <div class="col-lg-5 col-md-6 offset-lg-1">
                 <div class="card text-start">
                   <div class="card-body">
                     <div class="mb-3">
-                    <form action="" method="post">
-                    <input type="hidden" value="<?= $id; ?>" name="id">
+
+                      <form action="" method="post">
+
+                        <input type="hidden" value="<?= $reads['id_p_pg']; ?>" name="id">
                         <label for="jumlah" class="form-label">Masukkan Jumlah Baru</label>
                         <input type="text"
-                          class="form-control" name="jumlah" id="jumlah" aria-describedby="helpId" value="<?= $read['jumlah']; ?>" required>
+                          class="form-control" name="jumlah" id="jumlah" aria-describedby="helpId" value="<?= $reads['jumlah']; ?>" required autofocus>
                         </div>
                         <button type="submit" name="acc" class="btn btn-primary ">Submit</button>
                       </form>
+
                       <a name="back" id="back" class="btn btn-primary" href="read.php" role="button">Back</a> 
                     </div>
+
                 </div>
               </div>
             </div>

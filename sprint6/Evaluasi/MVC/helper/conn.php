@@ -1,5 +1,5 @@
 <?php 
-require_once "model/data.php";
+// require_once "model/data.php";
 function conn(){
     global $conn;
     if (!$conn) {

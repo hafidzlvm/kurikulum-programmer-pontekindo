@@ -2,7 +2,6 @@
 include_once "../controller/read.php";
 $rows=transaction();
 $i=1;
-$id=[];
 ?>
 <!doctype html>
 <html lang="en">
@@ -47,11 +46,11 @@ $id=[];
                             <td><?= $data['tanggal_t']; ?></td>
                             <td>
                               <a class="btn btn-primary" href="update.php?jenis-t=<?= 
-                              $data["jenis_t"]."&id=".$data['id_p_pg']."&no=".$i;
+                              $data["jenis_t"]."&id=".$data['id']."&no=".$i;
                               ?>">Ubah</a>
                               <a class="btn btn-primary" href="delete.php?jenis-t=<?= 
-                              $data["jenis_t"]."&id=".$data['id_p_pg'];
-                              ?>">Hapus</a>
+                              $data["jenis_t"]."&id=".$data['id'];
+                              ?>" onclick="return confirm('Anda akan menghapus No. <?= $i;  ?> ');">Hapus</a>
 
                             </td>
                         </tr>

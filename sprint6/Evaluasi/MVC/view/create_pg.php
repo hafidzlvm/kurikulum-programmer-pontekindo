@@ -1,7 +1,7 @@
 <?php 
 include_once "../controller/create.php";
 if (isset($_POST["submit"])){
-  if (revenue($_POST)>0){
+  if (expenditure($_POST)>0){
     echo "
        <script>
        alert ('Data Berhasil Ditambahkan!');
@@ -47,19 +47,20 @@ if (isset($_POST["submit"])){
         <div class="container py-5 d-flex" style="height: 80vh; justify-content: center; align-items: center;">
           <div class="row">
             <div class="col-lg-6 col-md-6" style="margin-top: 30px;">
-              <h1>Masukkan Jumlah Pemasukan</h1>
+              <h1>Masukkan Jumlah Pengeluaran</h1>
             </div>
             <div class="col-lg-5 col-md-6 offset-lg-1">
               <form class="card text-start" action="" method="post" >
                   <div class="card-body">
                       <div class="mb-3">
-                          <label for="jumlah" class="form-label">Jumlah Pemasukan Baru</label>
-                          <input type="text" name="jumlah" id="jumlah" class="form-control" placeholder="" aria-describedby="helpId" required>
+                          <label for="jumlah" class="form-label">Jumlah Pengeluaran Baru</label>
+                          <input autofocus type="text" name="jumlah" id="jumlah" class="form-control" placeholder="" aria-describedby="helpId"
+                          required>
                       </div>
                       <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                       <a name="back" id="back" class="btn btn-primary" href="read.php" role="button">Back</a> 
-                  </div>
-              </form>
+                    </div>
+                  </form>
             </div>
           </div>
         </div>

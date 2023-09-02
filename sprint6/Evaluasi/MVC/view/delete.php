@@ -1,10 +1,14 @@
 <?php 
 require_once "../controller/delete.php";
-$id=$_GET["id"];
-$set=$_GET["jenis-t"];
+require_once "../controller/read.php";
+$id=$_GET['id'];
+$read = read($id);
+$reads = $read[0];
+var_dump($reads['id_p_pg']);
 
-if ($set=='pemasukan'){
-    if (deleteRevenue("$id")>0) {
+// var_dump($id);die;
+if ( $reads['jenis_t'] == "pemasukan" ){
+    if (deleteRevenue($reads['id_p_pg'])>0) {
         echo "
         <script>
         alert ('Data Berhasil Dihapus!');
@@ -20,8 +24,9 @@ if ($set=='pemasukan'){
         ";
     }
     
-} elseif ($set=="pengeluaran"){
-    if (deleteExpenditure($id)>0) {
+}
+ elseif ( $reads['jenis_t'] == "pengeluaran" ){
+    if (deleteExpenditure($reads['id_p_pg'])>0) {
         echo "
         <script>
         alert ('Data Berhasil Dihapus!');

@@ -1,0 +1,18 @@
+Di sini kita akan belajar tentang pilar dari oop, sebuah data dapat di encapsulation sehingga dapat tersembunyi berupa privete, protected, public.
+Encapsulation adalah menyembunyikan data data yang ada di dalam object sehingga pihak luar tidak mampu untuk menggunakan properties di dalam class. kadang kita membutuhkan access privete atau protected.
+
+Kemudian polymorphism, object nya bisa memiliki banyak bentuk seperti object di dalam object di buat oleh properties nya di jadikan object
+
+Compile time terkait overloading-> method nya sama tipe nya berbeda, dan ini di php tidak bisa, walaupun kata pak eko bisa terjadi menggunakan magic function.
+Compile run terkait overridding-> nama fungsi nya sama namun beda-beda class.
+
+Parent keyword digunakan untuk memanggil function yang ada di class parent dengan cara parent::gas
+
+
+
+Lanjut abstraction fokus apa yang di lakukan suatu object tanpa harus tau apa yang terjadi.
+
+kita hanya perlu tau proses apa saja yang tersedia, abstact class tidak bisa digunakan pada object.
+abstract function tidak boleh modifier privete. Dan abstact function wajib di override. intinya suatu class yang tidak ia jadikan object melainkan hanya sebuah acuan untuk anak anak class nya. sekali lagi ini tidak bisa di masukkan ke dalam object hanya menjadi patokan.
+
+di php terkait dengan abstraction ada interface, trait. PR CARI EROR HANDLING

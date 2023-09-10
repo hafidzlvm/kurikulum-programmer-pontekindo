@@ -1,0 +1,9 @@
+Kali ini kita akan mempelajari pilar oop yang selanjutnya yaitu polymorhpism, 
+
+Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain
+
+
+Penting 
+Function overriding adalah kemampuan mendeklarasikan ulang function di child class, yang sudah ada di parent class
+Saat kita melakukan proses overriding tersebut, secara otomatis ketika kita membuat object dari class child, function yang di class parent tidak bisa diakses lagi
+

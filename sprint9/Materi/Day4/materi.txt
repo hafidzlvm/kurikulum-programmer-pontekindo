@@ -1,0 +1,90 @@
+=====================================Murojaah============================================
+parent => untuk memanggil properties dan method dari parent class
+
+protected => melindungin function dari serangan orang luar
+
+static => berdiri sendiri jadi tidak butuh object 
+
+abstract => tidak bisa kita jadikan object dan merupakan sebuah patokan untuk subclass
+
+interface => bedanya mengguanakan implements bukan extend, dan hanya bisa method dan constanta tidak untuk properties. Serta tanpa keyword abstract pun, secara otomatis berjalan dengan abstract
+
+trait => bisa menggunakan kata kunci use, sehingga bisa masukkan trait kedalam class
+
+new => keyword untuk membuat object
+
+this => keyword untuk menggunakan properties di class, dan bisa juga di pakai di subclass untuk memanggil properties di parent class
+
+self => memanggil const properties method, hanya di peruntukan untuk dirinya sendiri. adapun untuk selain dirinya maka gunakan parent
+
+4 pilar OOP:
+1. inhertance => extends
+
+2. encapsulation => hidden the data, getter dan setter mengambil data yang di sembunyikan agar bisa mengambil akses data. Visibility wordl, subclass, class.
+
+3. polymorhpism => object nya bisa memiliki banyak bentuk karena di dalam object terdapat object yang lain. Bagaimana caranya? dengan membuat propeties menjadi sebuah object. Terdapat dua jenis : runtime == ovorriding, compile-time == overloading 
+
+4. abstraction => 
+
+dan encapsulation memiliki prinsip yang sama untuk menyembunyikan. beda nya apa? encapsulation itu membungkus. membungkus motherboard padahal di dalam nya ada motherboard, tanpa kita tahu di dalam nya ada motherboard kita bisa untuk menggunakan nya.
+benar-benar ada di dalam object nya ketika di panggil dan cuman akses nya di tutupi +=+
+
+abstract == mobil kita masukkan kedalam object secara tidak langsung object tersebut punya data data yang ada di dalam class abstract nya. tidak bisa kita lihat dari luar tapi kita tetap bisa menjalankannya.
+
+
+===================             Pembelajaran Di mulai             =======================
+
+Konsep ngoding secara global ada dua :
+- Ada yang fullstak satu orang membuat satu aplikasi baik CSS, Database, dan semuanya dia yang buat dari 0
+- Yang bukan fullstak yaitu bagian tersendiri antara beckend dan frontend dan umum nya menggunakan API sebagai jembatan antara frontend dan beckend
+
+
+membuat api agar bisa terkoneksi antara frontend dan Database, sebelum masuk ke sistem maka di jembatani dulu lewat API
+
+Tugas beckend adalah menghandle error nya sehingga bisa di baca oleh frontend, bukan di baca oleh user
+
+
+============= Dua cara dalam error Handling
+Procedural
+OOP
+
+
+fungsi khusus untuk memanggil error yaitu error_reporting();
+
+
+============= Magic function php
+autoload memasukkan require ke dalam function lalu dengan keyword function __autoload($class){di isi dengan require dengan value setiap nama $class . "php"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5 bagian dalam error, seperti error 404 dan ini merupakan ujung tombak dari beckend
+
+================= dua mode utama dalam pengembangan perangkat lunak =======================
+Terdapat dua jenis development mode dan production mode. Perbedaan? production mode memunculkan error nya seperti code 505 atau 404 adapun yang satunya dengan menampilkan error di line ke berapa
+
+Cara rubah ke production mode masuk ke php.ini kita ubah menjadi production.
+=========================================================================================
+API berguna untuk menyambungkan antara sistem backend dan frontend
+===================                  Error Handling               =======================
+Preceptual Error, adanya kesalahan yang di sebabkan oleh ketidak jelasan
+Cognitive Error
+Motor Error
+===================              Error logging                    =======================
+Sentry, namanya error logging bisa di gunakan untuk mendapatkan error error,
+
+    
+
+

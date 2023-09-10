@@ -36,24 +36,6 @@ class Detail extends Products{
     }
 }
 
-$oreo = new Products();
-$oreo->satu = "satu";
-$oreo->dua = "dua";
-// $oreo->tiga = "tiga";
-echo $oreo->satu;
-echo "<br>";
-echo $oreo->dua;
-echo "<br>";
-// $oreo->tampilNama();
-echo "<br>";
-// echo $oreo->name;
-// echo $oreo->tiga;
-// $oreo->tampilTiga();
-$detail = new Detail;
-// $detail->tampilTiga();
-// $detail->tampilNama();
-// $oreo->name = "Hanif";
-// echo $oreo->name;
-$oreo->setName("Hafidz");
-echo $oreo->getName();
+class asus extends Laptop
+
 ?>

@@ -36,6 +36,5 @@ class Detail extends Products{
     }
 }
 
-class asus extends Laptop
 
 ?>

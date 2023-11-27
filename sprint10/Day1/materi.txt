@@ -1,0 +1,16 @@
+========================== Pembelajan di mulai ================================
+Autoload, Berkaitan dengan mengimpor atau require dan include yang biasanya kita pakai init.php dan ini kurang bagus. karena ada system autoload, tinggal di ambil semua class nya. Untuk mengembangkan suatu app dengan autoload maka nanti kita akan menggunakan namespace
+
+Intinya yang bisa di otomatis, maka diotomatiskan.
+
+
+Kita akan membuat APP dengan MVC : 
+1. Terdapat app dan public di dalam folder utama. public di gunakan untuk folder user baik tampilan css.
+2. di public kita buat index nanti untuk memanggil semua yang ada di dalam App, sehingga user nya ngga perlu membuat app nya 
+
+Dimana dia ada htaccess tidak ada file index maka tidak bisa di akses app nya .
+
+
+Untuk penggunaan composer maka peletakkan dari vendor dan composer berada di bagian sejajar dengan index.php.
+===============================================================================
+Perlu untuk mengetahui sebuah ERD karena dalam pengerjaan project sangat di perlukan. perlu untuk mengetahui sistem bisnis nya.

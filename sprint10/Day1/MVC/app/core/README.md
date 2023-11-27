@@ -1,0 +1,2 @@
+File di dalam core ini mengatur semua yang ada di dalam app, hendaknya nama file dari isi di dalam core sama persis dengan class yang akan kita gunakan di dalam file tersebut
+Jangan Lupa require_once nya di sesuaikan dengan file composer.
